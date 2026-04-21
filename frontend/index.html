@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CodeRAG — Chat with your Codebase</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- App styles -->
+  <link rel="stylesheet" href="styles/main.css" />
+
+  <!-- React (UMD) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.production.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.production.min.js"></script>
+</head>
+<body>
+  <div id="root"></div>
+
+  <!-- Shared config & utilities -->
+  <script src="js/config.js"></script>
+  <script src="js/utils.js"></script>
+
+  <!-- Components (order matters: dependencies before consumers) -->
+  <script src="js/components/Header.js"></script>
+  <script src="js/components/IngestPanel.js"></script>
+  <script src="js/components/CollectionPanel.js"></script>
+  <script src="js/components/SourcesPanel.js"></script>
+  <script src="js/components/ChatArea.js"></script>
+
+  <!-- Root app + mount -->
+  <script src="js/App.js"></script>
+</body>
+</html>
